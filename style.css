@@ -1,0 +1,139 @@
+html, body, main, section,div, h1, ul, li, p, a, img, span {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+}
+body #wrapper {
+    width: 1350px;
+    height: 220px;
+}
+.menu {
+    list-style-type: none;
+    margin-top: 5px;
+}
+.menu li {
+    margin-left: 5px;
+    width: 180px;
+    height: 180px;
+    float: left;
+    text-align: center;
+    border: 20px solid #000000;
+    background: url('images/m4.jpg');
+}
+.menu li:hover {
+    border: 20px solid #b72900;
+    background: url('images/angel.jpg');
+}
+.menu li:hover h3 {
+    text-decoration: underline;
+}
+.menu li:hover .subtitle {
+    display: none;
+}
+.menu li:hover .click-here {
+    display: block;
+}
+.menu li h3 {
+    color: white;
+    margin: 5px auto;
+}
+.menu li .subtitle {
+    margin-top: 10px;
+}
+.menu li .click-here {
+    display: none;
+    color: white;
+    text-transform: uppercase;
+}
+.menu li .image-container img {
+    width: 120px;
+    height: 100px;
+    border-radius: 20px;
+}
+.menu li:hover .image-container img {
+    width: 140px;
+    height: 110px;
+}
+body {
+    background-image: url('images/cars.jpg');
+    background-repeat: no-repeat;
+}
+#login {
+    width: 120px;
+    height: 100px;
+}
+#loginLi {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-weight: 200;
+}
+a {
+    color: floralwhite;
+    font-weight: bold;
+}
+#main {
+    float: left;
+    display: block;
+}
+#carDescription {
+    width: 300px;
+    height: 300px;
+}
+#loadingBox {
+    background-color: red;
+    border-radius: 5px 10px;
+    width: 500px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#infoBox {
+    background-color: #0216ff;
+    border-radius: 5px 10px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#errorBox {
+    background-color: #22ff00;
+    border-radius: 5px 10px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+#errorBox, #infoBox, #loadingBox {
+    display: none;
+}
+#errorBox, #infoBox, #loadingBox :hover{
+  cursor: pointer;
+}
+main > section{
+  display: none;
+  margin-left: 50px;
+  color: white;
+}
+footer{
+  width: auto;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+}
+table th{
+  color: black;
+  border-radius: 10px;
+  background-color: #AAA;
+  border: 2px solid black;
+  padding: 10px 10px;
+}
+table td{
+  color: black;
+  border-radius: 10px;
+  background-color: #CCC;
+  border: 2px solid black;
+  padding: 10px 10px;
+}

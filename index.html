@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>AutoBuild</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="wrapper">
+            <ul class="menu">
+                <li>
+                    <a href="#" id="linkHome">Home</a>
+                    <div class="image-container">
+                        <img src="images/audi.png" alt="cars" />
+                    </div>
+                    <p class="subtitle">
+                        Welcome to DreamAuto Right Place,Right Price
+                    </p>
+                    <p class="click-here">
+                        Click for more...
+                    </p>
+                </li>
+                <li>
+                    <a href="#" id="linkLogin">Login</a>
+                    <div class="image-container">
+                        <img src="images/mercedes.png" alt="cars" />
+                    </div>
+                    <p class="subtitle">
+                        Please enter your credentials
+                    </p>
+                    <p class="click-here">
+                        Click for more...
+                    </p>
+                </li>
+                <li>
+                    <a href="#" id="linkRegister">Register</a>
+                    <div class="image-container">
+                        <img src="images/bmw.png" alt="cars" />
+                    </div>
+                    <p class="subtitle">
+                        Enter Comunity
+                    </p>
+                    <p class="click-here">
+                        Click for more...
+                    </p>
+                </li>
+                <li>
+                    <a href="#" id="linkSale">Sale your car</a>
+                    <div class="image-container">
+                        <img src="images/lexus.png" alt="cars" />
+                    </div>
+                    <p class="subtitle">
+                        Sale your car here
+                    </p>
+                    <p class="click-here">
+                        Click for more...
+                    </p>
+                </li>
+                <li>
+                    <a href="#" id="linkBuy">See our cars</a>
+                    <div class="image-container">
+                        <img src="images/manycars.jpg" alt="cars" />
+                    </div>
+                    <p class="subtitle">
+                        Best cars,Best prices
+                    </p>
+                    <p class="click-here">
+                        Click for more...
+                    </p>
+                </li>
+                <li id="loginLi">
+                    <a href="#" id="linkLogout">Logout</a>
+                    <form>
+                        <div class="image-container">
+                            <img src="images/rols.png" alt="cars" id="login" />
+                        </div>
+                        <p class="subtitle">
+                            Are you sure?
+                        </p>
+                        <p class="click-here">
+                            see you soon
+                        </p>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main id="main">
+
+        <section id="loadingBox">Loading...</section>
+        <section id="infoBox" onclick="$(this).hide()">Info</section>
+        <section id="errorBox" onclick="$(this).hide()">Error</section>
+
+        <section id="viewHome">
+            <h1>Welcome</h1>
+            <div>Welcome to our selection of cars,Enjoy it</div>
+        </section>
+
+        <section id="viewLogin">
+            <form id="formLogin">
+                <h1>Please login</h1>
+                <div>
+                    <label for="loginUser">Username:</label>
+                </div>
+                <div>
+                    <input type="text" id="loginUser" required="true" />
+                </div>
+                <div>
+                    <label for="loginPass">Password:</label>
+                </div>
+                <div>
+                    <input type="password" id="loginPass" required="true" />
+                </div>
+                <div>
+                    <input type="submit" id="loginButton" value="Login" />
+                </div>
+            </form>
+        </section>
+
+        <section id="viewRegister">
+            <form id="formRegister">
+                <h1>Please Register</h1>
+                <div>
+                    <label for="registerUser">Username:</label>
+                </div>
+                <div>
+                    <input type="text" id="registerUser" required="true" />
+                </div>
+                <div>
+                    <label for="registerPass">Password:</label>
+                </div>
+                <div>
+                    <input type="password" id="registerPass" required="true" />
+                </div>
+                <div>
+                    <input type="submit" id="registerButton" value="Register" />
+                </div>
+            </form>
+        </section>
+
+        <section id="viewSale">
+            <h1>You can post you car for sale here</h1>
+            <div id="cars">Currently you have 0 ads</div>
+        </section>
+        <section id="viewOur">
+            <h1>Please add another can into our garage </h1>
+            <form id="formAddCar">
+                <div>
+                    <label for="carMark">Mark:</label>
+                </div>
+                <div>
+                    <input type="text" id="carMark" required="true" />
+                </div>
+                <div>
+                    <label for="carModel">Model:</label>
+                </div>
+                <div>
+                    <input type="text" id="carModel" required="true" />
+                </div>
+                <div>
+                    <label for="carYear">Year of manufacture:</label>
+                </div>
+                <div>
+                    <input type="text" id="carYear" required="true" />
+                </div>
+                <div>Please enter description about your car</div>
+                <div>
+                    <textarea id="carDescription">Engine,Year,Colour,BHP and etc</textarea>
+                </div>
+                <div>
+                    <input type="submit" id="carRegister" value="Register" />
+                </div>
+            </form>
+        </section>
+    </main>
+<footer>
+  (c) Copyright 2016
+</footer>
+</body>
+
+</html>
