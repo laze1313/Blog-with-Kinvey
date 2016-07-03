@@ -118,10 +118,17 @@ main > section{
   color: white;
 }
 footer{
-  width: auto;
-  height: 50px;
-  font-size: 24px;
-  color: white;
+    font-size: 24px;
+     color: black;
+    text-align: center;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+
+
+
 }
 table th{
   color: black;
